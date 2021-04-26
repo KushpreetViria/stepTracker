@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:rotationY="0">
+
+    <Button
+        android:id="@+id/stopBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleY="1.5"
+        android:text="@string/stop_counting"
+        app:backgroundTint="#CF2228"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startBtn"
+        app:layout_constraintVertical_bias="0.123" />
+
+    <TextView
+        android:id="@+id/tvStepCounter"
+        android:layout_width="233dp"
+        android:layout_height="68dp"
+        android:gravity="center"
+        android:text="@string/StepCounterText"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.167"
+        tools:autoSizeTextType="uniform"
+        tools:text="Steps:" />
+
+    <TextView
+        android:id="@+id/tvStepNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""
+        android:textSize="18sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvStepCounter"
+        app:layout_constraintVertical_bias="0.053"
+        tools:textSize="36sp" />
+
+    <Button
+        android:id="@+id/startBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleY="1.5"
+        android:text="@string/start_counting"
+        app:backgroundTint="#7ECF22"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvStepNumber"
+        app:layout_constraintVertical_bias="0.129" />
+
+    <Button
+        android:id="@+id/stepTrackerLaunchBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TrackSteps"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.826" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
